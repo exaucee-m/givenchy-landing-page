@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Givenchy Perfume</title>
+    <style>
+      h1 {
+        text-align: center;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 4px;
+        padding: 10px;
+        margin: 0 90px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h2 {
+        padding: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+        font-size: 22px;
+        text-align: center;
+        color: white;
+      }
+      body {
+        background: radial-gradient(
+          circle at 18.7% 37.8%,
+          rgb(250, 250, 250) 0%,
+          rgb(225, 234, 238) 90%
+        );
+        padding: 10px 30px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      img {
+        display: block;
+        height: auto;
+        width: 400px;
+        float: right;
+        margin: -330px 10px;
+        padding: 0 -70px;
+        border-left: 20px;
+        max-width: 40%;
+        opacity: 100%;
+      }
+
+      .topParagraph {
+        display: inline-block;
+        font-size: large;
+        line-height: 35px;
+        margin-right: 50%;
+        margin-top: 50px;
+        padding-top: 50px;
+      }
+
+      span {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .discount {
+        background-color: rgb(241, 95, 95);
+        padding: 5px;
+        margin: 10px auto;
+        border-radius: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .shopNow {
+        display: inline-block;
+        margin: 70px auto;
+        padding: 15px 35px;
+        border-radius: 20px;
+        font-size: 25px;
+        box-shadow: 5px 5px 10px rgb(85, 84, 84);
+        transition: all 200ms ease-in-out;
+      }
+
+      .shopNow:hover {
+        cursor: pointer;
+        background-color: rgb(241, 95, 95);
+        color: white;
+      }
+
+      .email {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 90px;
+        border-radius: 20px;
+        font-size: 14px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 3px 3px 5px rgb(85, 84, 84);
+      }
+
+      .email:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        box-shadow: 3px 3px 5px white;
+      }
+
+      .top {
+        margin-bottom: -10px;
+        max-width: 900px;
+      }
+      .subscribePara {
+        text-align: center;
+        font-size: 18px;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 850px;
+      }
+      .designer {
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Givenchy L'interdit</h1>
+    <h2>Fragrance Set</h2>
+    <hr />
+    <div class="container">
+      <div class="top">
+        <p class="topParagraph">
+          <strong>L'Interdit Eau de Parfum</strong> is an invitation to defy
+          convention and embrace your individuality.
+          <br />
+          Indulge in a touch of transgression with a sultry Givenchy fragrance
+          set including a
+          <em
+            >L'Interdit Eau de Parfum (50ml), a mini Le Rouge Interdit Intense
+            Silk in shade L'Interdit, and a mini Volume Disturbia mascara in
+            Black Disturbia</em
+          >.
+          <br />
+          <span>Forbid nothing. Allow no rules.</span>
+        </p>
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/513/original/3274872449183_P169340_LINTERDIT_EDP_50ML_MINI-VOLUME-DISTURBIA_01_MINI-LE-ROUGE-INTENSE-SILK_333_XMA.png?1671400844"
+          alt="Givenchy Giftset"
+        />
+        <a
+          href="https://www.givenchybeauty.com/gb/p/l-interdit---christmas-gift-set-F70000166.html?dwvar_F70000166_size=50ML%2B1%2C5G%20(lipstick)%2B4G(mascara)&gclid=CjwKCAiAheacBhB8EiwAItVO27GZYK_vBqd2lX_mSS2Jhno5Tw84wYvcT4PiqGdy-_SsLmEcixGqqhoCjF8QAvD_BwE"
+          target="_blank"
+        >
+          <button class="shopNow">SHOP NOW</button>
+        </a>
+      </div>
+    </div>
+    <div class="discount">
+      <h3>Here's 15% off!</h3>
+      <p class="subscribePara">
+        Subscribe to our mailing list and get 15% off first order
+      </p>
+      <button class="email">Enter email</button>
+    </div>
+    <p class="designer">This page was built by Exaucee Mampova.</p>
+    <script>
+      function subscribe() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert(
+          "Thank you " +
+            name +
+            " . Check your email for the discount code. Enjoy!"
+        );
+      }
+      let enterEmail = document.querySelector(".email");
+      enterEmail.addEventListener("click", subscribe);
+    </script>
+  </body>
+</html>
